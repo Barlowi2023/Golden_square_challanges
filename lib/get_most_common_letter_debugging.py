@@ -10,7 +10,7 @@ def get_most_common_letter(text):
     print("start of loop")
     for char in clean_text:
         counter[char] = counter.get(char, 0) + 1
-        print(f"{counter}")
+        print(f"{char}{counter}")
     letter = sorted(counter.items(), key=lambda item: item[1], reverse = True)[0][0]
     return letter
 
